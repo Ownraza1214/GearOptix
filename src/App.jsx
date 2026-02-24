@@ -15,6 +15,7 @@ import DrivetrainBuilder from './components/DrivetrainBuilder';
 import DrivetrainComponents from './components/DrivetrainComponents';
 import ManufacturingPanel from './components/ManufacturingPanel';
 import SustainabilityPanel from './components/SustainabilityPanel';
+import PDFDiffPanel from './components/PDFDiffPanel';
 import { designSpurGear } from './calculations/spurGear';
 import { designHelicalGear } from './calculations/helicalGear';
 import { designBevelGear } from './calculations/bevelGear';
@@ -152,6 +153,8 @@ export default function App() {
                 return <ManufacturingPanel results={results} designParams={designParams} />;
             case 'sustainability':
                 return <SustainabilityPanel results={results} designParams={designParams} />;
+            case 'pdfdiff':
+                return <PDFDiffPanel />;
             default:
                 return null;
         }
