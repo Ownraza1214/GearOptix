@@ -5,7 +5,7 @@ import {
     BookOutlined, MenuFoldOutlined, MenuUnfoldOutlined,
     SoundOutlined, FireOutlined, CloudServerOutlined,
     ApartmentOutlined, ThunderboltOutlined, ToolOutlined,
-    GlobalOutlined
+    GlobalOutlined, FileSyncOutlined
 } from '@ant-design/icons';
 
 const navItems = [
@@ -26,6 +26,7 @@ const advancedItems = [
     { key: 'components', icon: <ThunderboltOutlined />, label: 'Motor/Clutch', badge: 'ADV' },
     { key: 'manufacturing', icon: <ToolOutlined />, label: 'Manufacturing', badge: 'DFM' },
     { key: 'sustainability', icon: <GlobalOutlined />, label: 'Sustainability', badge: 'LCA' },
+    { key: 'pdfdiff', icon: <FileSyncOutlined />, label: 'PDF Diff', badge: 'NEW' },
 ];
 
 export default function Sidebar({ activeTab, onTabChange, collapsed, onCollapse }) {
